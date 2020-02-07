@@ -4,12 +4,12 @@ node {
 
      
   stage('Git-Checkout') {
-   git 'https://github.com/chakri1998/devops.git'
+   git 'https://github.com/chakri1998/bike.git'
   }
   stage('Input to continue forther') {
    input('git checkout done Do you want to forther proceed?')  
   }
- def project_path="bike/"
+ def project_path="BikeDealers/"
  
  dir(project_path) {
     
