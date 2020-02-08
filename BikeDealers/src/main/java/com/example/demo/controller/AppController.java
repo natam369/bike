@@ -39,7 +39,7 @@ public class AppController {
 	 * return "assignBrandToDealer"; }
 	 */
 
-	@RequestMapping("/form")
+	@GetMapping("/form")
 	public String index1(Model model) {
 		List<Brands> brands = brandsService.getAllBrandsFromDataBase();
 		List<Dealers> dealers = dealersService.getAllDealersFromDatabase();
