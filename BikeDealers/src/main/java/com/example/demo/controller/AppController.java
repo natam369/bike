@@ -30,7 +30,7 @@ public class AppController {
 	@Autowired
 	private dealersService dealersService;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping("/")
 	public String index() {
 		return "index";
 	}
