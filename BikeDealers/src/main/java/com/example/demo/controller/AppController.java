@@ -30,7 +30,7 @@ public class AppController {
 	@Autowired
 	private dealersService dealersService;
 
-	@GetMapping("/")
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
 		return "index";
 	}
@@ -39,7 +39,7 @@ public class AppController {
 	 * return "assignBrandToDealer"; }
 	 */
 
-	@GetMapping("/form")
+	@RequestMapping("/form")
 	public String index1(Model model) {
 		List<Brands> brands = brandsService.getAllBrandsFromDataBase();
 		List<Dealers> dealers = dealersService.getAllDealersFromDatabase();
